@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MITHO AI TRADER</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#080e19;color:white;font-family:Arial,sans-serif;padding:20px}
+header{text-align:center;padding:20px;color:#35e6a0}
+h1{margin:0}
+.panel{background:#121e30;padding:20px;border-radius:14px;margin:18px auto;max-width:600px}
+select,button{width:100%;padding:14px;margin-top:12px;border-radius:8px;border:0;font-size:16px}
+select{background:#26364d;color:white}
+button{background:#12bd83;color:#06130e;font-weight:bold}
+.result{font-size:24px;text-align:center;padding:20px;color:#35e6a0}
+.small{color:#a9b8ca;text-align:center;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+<h1>MITHO AI TRADER</h1>
+<p>FOREX • QUOTEX • MT5</p>
+</header>
+<div class="panel">
+<h3>Select Currency Pair</h3>
+<select id="pair">
+<option>EUR/USD</option>
+<option>GBP/USD</option>
+<option>USD/JPY</option>
+<option>GBP/JPY</option>
+<option>EUR/JPY</option>
+<option>XAU/USD</option>
+</select>
+<h3>Timeframe</h3>
+<select id="time">
+<option>1 Minute</option>
+<option>5 Minutes</option>
+<option>15 Minutes</option>
+</select>
+<button onclick="analyze()">ANALYZE MARKET</button>
+<div class="result" id="result">READY</div>
+<p class="small" id="detail">Select a pair to begin analysis.</p>
+</div>
+<p class="small">MITHO AI TRADER © 2026</p>
+<script>
+function analyze(){
+document.getElementById("result").innerText="ANALYSIS NOT CONNECTED";
+document.getElementById("detail").innerText=
+"Live market API and verified data are required before generating a real signal.";
+}
+</script>
+</body>
+</html>
